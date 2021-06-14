@@ -11,6 +11,10 @@
 
 ?>
 
+<?php
+/* Add donation info to all footers except on individual press releases */
+if( is_archive() || is_page() ):
+?>
 <a name="support"></a>
 <div class="container_parent veg_support">
 	<div class="container">
@@ -24,6 +28,9 @@
 		</div>
 	</div>
 </div>
+<?php
+endif;
+?>
 
 	<footer id="colophon" class="site-footer veg_footer">
 		<div class="container">

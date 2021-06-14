@@ -418,7 +418,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
 }
 
 dfn,
@@ -781,6 +781,12 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+.page-header {
+	margin-top: 25px;
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -993,6 +999,10 @@ body {
 	padding: 20px 0;
 }
 
+.container_parent.veg_about {
+	padding: 0 0 40px 0;
+}
+
 
 .container_parent_footer {
 	padding: 0;
@@ -1054,6 +1064,9 @@ div .btn-primary:hover {
 .veg_hero_body p {
 	margin: 0 0 20px;
 }
+.veg_hero_body p:last-of-type {
+	margin: 0 0 0;
+}
 
 /* Veg Header */
 .container.veg_header {
@@ -1097,12 +1110,11 @@ div .btn-primary:hover {
 
 /* Support Section */
 .container_parent.veg_support {
-	padding: 10px 0 20px 0;
+	padding: 10px 0 0 0;
 }
 
 .container_parent.veg_support .btn, .container_parent.veg_about .btn {
 	width: 100%;
-	margin-bottom: 10px;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -1151,31 +1163,43 @@ div .btn-primary:hover {
 }
 
 /* Press Block */
-.veg_site_block.veg_press {
+.category-press {
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1.2em;
 }
 
-.veg_site_block.veg_press, .veg_site_block.veg_press .site_body {
+.single .category-press {
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1.1em;
+	padding-top: 25px
 }
-
-.veg_site_block.veg_press p .title-date {
-	font-weight: 600;
-	font-size: 0.8em;
-}
-
-.veg_hero_title.veg_press {
+.single .category-press .posted-on {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5em;
-	margin-top: 10px;
-}
-
-
-.veg_site_block.veg_press_release, .veg_site_block.veg_press_release .site_body {
+	font-weight: 600;
 	font-size: 1em;
 }
+.single .category-press .entry-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	margin-top: 16px;
+}
+.category-press .entry-content p {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+.category-press .entry-content h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	margin-top: 30px;
+}
+
+
+.archive .category-press .posted-on {
+	font-weight: 600;
+}
+.archive .category-press .entry-title {
+	font-size: 1.2em;
+	margin-top: 0;
+	margin-bottom: 20px;
+}	
 
 
 
@@ -1200,6 +1224,7 @@ div .btn-primary:hover {
 	font-size: 14px;
 	padding: 5px 0;
 	line-height: 50px;
+	margin-top: 30px;
 }
 
 .veg_footer_links {
